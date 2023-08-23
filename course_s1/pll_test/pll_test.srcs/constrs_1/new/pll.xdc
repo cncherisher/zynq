@@ -1,0 +1,15 @@
+set_property PACKAGE_PIN AB11 [get_ports sys_clk]
+set_property PACKAGE_PIN AA13 [get_ports rst_n]
+set_property IOSTANDARD LVCMOS33 [get_ports rst_n]
+set_property IOSTANDARD LVCMOS33 [get_ports sys_clk]
+
+create_clock -period 40.000 -name sys_clk -waveform {0.000 20.000} [get_ports sys_clk]
+
+set_property IOSTANDARD LVCMOS33 [get_ports clk_out1]
+set_property IOSTANDARD LVCMOS33 [get_ports clk_out2]
+set_property IOSTANDARD LVCMOS33 [get_ports clk_out3]
+set_property IOSTANDARD LVCMOS33 [get_ports clk_out4]
+set_property PACKAGE_PIN A11 [get_ports clk_out1]
+set_property PACKAGE_PIN A13 [get_ports clk_out2]
+set_property PACKAGE_PIN A14 [get_ports clk_out3]
+set_property PACKAGE_PIN E13 [get_ports clk_out4]
